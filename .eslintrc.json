@@ -5,12 +5,40 @@
         "es2021": true,
         "node": true
     },
-    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+
+        // Eslint plugin import
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript"
+    ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": ["@typescript-eslint"],
-    "rules": {}
+    "plugins": ["@typescript-eslint", "import"],
+    "rules": {
+        "import/no-unresolved": "off",
+        "import/named": "off",
+        "import/namespace": "warn",
+        "import/export": "warn",
+        "import/no-named-as-default": "off",
+        // Rule to force a consistent import order
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    "builtin", // modules like `fs` or `path`
+                    "external", // external modules from the nearest `node_modules` folder
+                    "internal", // Any file that is imported from the same project
+                    "parent", // Any file imported from the parent folder of the current file, eg: `../file.ts`,
+                    "sibling", // Any file imported that is inside the same folder, eg : `./file.ts`
+                    "index" // Any file imported from an index of the current directory, eg: `./index.ts` or `./`
+                ]
+            }
+        ]
+    }
 }
