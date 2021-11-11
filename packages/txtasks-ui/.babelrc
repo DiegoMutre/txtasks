@@ -1,0 +1,12 @@
+{
+    "presets": [
+        [
+            "@babel/preset-react",
+            {
+                "runtime": "automatic" // use `jsx` instead of `React.createElement`
+            }
+        ],
+        "@babel/preset-env",
+        "@babel/preset-typescript"
+    ]
+}
