@@ -18,6 +18,7 @@
     "scripts": {
         "start:client": "lerna exec --scope @txtasks/client -- yarn dev",
         "add:w": "yarn add -W",
+        "add:client": "lerna exec --scope @txtasks/client -- yarn add",
         "format": "prettier --write .",
         "lint": "eslint \"./packages/**/*.{ts,tsx}\" --fix"
     },
