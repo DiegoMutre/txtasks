@@ -17,7 +17,8 @@
     ],
     "scripts": {
         "start:client": "lerna exec --scope @txtasks/client -- yarn dev",
-        "add:w": "yarn add -W"
+        "add:w": "yarn add -W",
+        "format": "prettier --write ."
     },
     "devDependencies": {
         "lerna": "^4.0.0",
