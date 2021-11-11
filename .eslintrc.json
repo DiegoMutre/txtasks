@@ -37,7 +37,8 @@
                     "parent", // Any file imported from the parent folder of the current file, eg: `../file.ts`,
                     "sibling", // Any file imported that is inside the same folder, eg : `./file.ts`
                     "index" // Any file imported from an index of the current directory, eg: `./index.ts` or `./`
-                ]
+                ],
+                "newlines-between": "always"
             }
         ]
     }
