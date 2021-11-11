@@ -1,0 +1,26 @@
+{
+    "name": "txtasks",
+    "private": true,
+    "author": {
+        "name": "DiegoMutre",
+        "email": "tysonmutre10@gmail.com"
+    },
+    "license": "MIT",
+    "version": "1.0.0",
+    "keywords": [
+        "react",
+        "styled-components",
+        "emotion",
+        "react-query",
+        "typescript",
+        "nodejs"
+    ],
+    "devDependencies": {
+        "lerna": "^4.0.0"
+    },
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ]
+    }
+}
