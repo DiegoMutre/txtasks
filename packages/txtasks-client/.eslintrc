@@ -1,3 +1,17 @@
 {
-    "extends": ["../../.eslintrc.json"]
+    "extends": [
+        "../../.eslintrc.json",
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:react-hooks/recommended"
+    ],
+    "plugins": ["react", "react-hooks"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true // Enable jsx support
+        }
+    },
+    "rules": {
+        "react/react-in-jsx-scope": "off" // Disable the rule to import `React` to use jsx
+    }
 }
