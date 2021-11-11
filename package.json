@@ -19,6 +19,7 @@
         "start:client": "lerna exec --scope @txtasks/client -- yarn dev",
         "add:w": "yarn add -W",
         "add:client": "lerna exec --scope @txtasks/client -- yarn add",
+        "add:ui": "lerna exec --scope @txtasks/ui -- yarn add",
         "format": "prettier --write .",
         "lint": "eslint \"./packages/**/*.{ts,tsx}\" --fix",
         "prepare": "husky install"
