@@ -37,5 +37,11 @@
         "packages": [
             "packages/*"
         ]
+    },
+    "lint-staged": {
+        "**/*.{ts,tsx,js,json}": [
+            "yarn format",
+            "yarn lint"
+        ]
     }
 }
