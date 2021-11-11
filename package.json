@@ -15,6 +15,9 @@
         "typescript",
         "nodejs"
     ],
+    "scripts": {
+        "start:client": "lerna exec --scope @txtasks/client -- yarn dev"
+    },
     "devDependencies": {
         "lerna": "^4.0.0"
     },
