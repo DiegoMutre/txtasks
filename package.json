@@ -22,7 +22,8 @@
         "add:ui": "lerna exec --scope @txtasks/ui -- yarn add",
         "format": "prettier --write .",
         "lint": "eslint \"./packages/**/*.{ts,tsx}\" --fix",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "bootstrap": "lerna bootstrap --use-workspaces"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.3.1",
