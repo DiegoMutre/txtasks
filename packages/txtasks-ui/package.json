@@ -10,6 +10,10 @@
         "dist"
     ],
     "license": "MIT",
+    "scripts": {
+        "build": "rimraf dist && tsc --emitDeclarationOnly && rollup -c",
+        "tsc": "tsc"
+    },
     "devDependencies": {
         "@babel/core": "^7.16.0",
         "@babel/preset-env": "^7.16.0",
