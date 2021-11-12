@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { helloWorld } from '@txtasks/ui';
 
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
     const [count, setCount] = useState(0);
+    // Testing purposes
+    helloWorld();
 
     return (
         <div className='App'>
