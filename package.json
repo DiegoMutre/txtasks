@@ -28,16 +28,6 @@
         "check:pkg": "manypkg check",
         "fix:pkg": "manypkg fix"
     },
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.3.1",
-        "@typescript-eslint/parser": "^5.3.1",
-        "eslint": "^8.2.0",
-        "eslint-plugin-import": "^2.25.3",
-        "husky": "^7.0.4",
-        "lerna": "^4.0.0",
-        "lint-staged": "^11.2.6",
-        "prettier": "2.4.1"
-    },
     "workspaces": {
         "packages": [
             "packages/*"
@@ -50,6 +40,14 @@
         ]
     },
     "dependencies": {
-        "@manypkg/cli": "^0.19.1"
+        "@manypkg/cli": "^0.19.1",
+        "@typescript-eslint/eslint-plugin": "^5.3.1",
+        "@typescript-eslint/parser": "^5.3.1",
+        "eslint": "^8.2.0",
+        "eslint-plugin-import": "^2.25.3",
+        "husky": "^7.0.4",
+        "lerna": "^4.0.0",
+        "lint-staged": "^11.2.6",
+        "prettier": "2.4.1"
     }
 }
