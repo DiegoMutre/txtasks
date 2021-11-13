@@ -16,11 +16,11 @@
         "nodejs"
     ],
     "scripts": {
-        "start:client": "lerna exec --scope @txtasks/client -- yarn dev",
+        "dev:client": "manypkg run client dev",
         "add:w": "yarn add -W",
-        "add:client": "lerna exec --scope @txtasks/client -- yarn add",
-        "add:ui": "lerna exec --scope @txtasks/ui -- yarn add",
-        "build:ui": "lerna exec --scope @txtasks/ui -- yarn build",
+        "add:client": "manypkg run client add",
+        "add:ui": "manypkg run ui add",
+        "build:ui": "manypkg run ui build",
         "format": "prettier --write .",
         "lint": "eslint \"./packages/**/*.{ts,tsx}\" --fix",
         "prepare": "husky install",
