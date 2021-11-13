@@ -46,5 +46,8 @@
             "yarn format",
             "yarn lint"
         ]
+    },
+    "dependencies": {
+        "@manypkg/cli": "^0.19.1"
     }
 }
