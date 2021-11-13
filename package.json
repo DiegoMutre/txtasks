@@ -24,7 +24,9 @@
         "format": "prettier --write .",
         "lint": "eslint \"./packages/**/*.{ts,tsx}\" --fix",
         "prepare": "husky install",
-        "bootstrap": "lerna bootstrap --use-workspaces"
+        "bootstrap": "lerna bootstrap --use-workspaces",
+        "check:pkg": "manypkg check",
+        "fix:pkg": "manypkg fix"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.3.1",
