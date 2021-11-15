@@ -15,4 +15,10 @@ module.exports = {
 
     // Module file extensions for importing
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+
+    // The environment where the tests will run
+    testEnvironment: 'jsdom',
+
+    // Directories to find the modules
+    moduleDirectories: ['node_modules', 'src'],
 };
